@@ -10,7 +10,7 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	acquire_target()
-	global_position = global_position.lerp(target_position, 1-exp(-delta * 10)); # framerate independent smooth lerp camera movement
+	global_position = global_position.lerp(target_position, 1-exp(-delta * 20)); # framerate independent smooth lerp camera movement
 		
 
 func acquire_target():

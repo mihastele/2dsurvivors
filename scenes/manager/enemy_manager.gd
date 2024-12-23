@@ -1,6 +1,6 @@
 extends Node
 
-const SPAWN_RADIUS = 330
+const SPAWN_RADIUS = 350
 @export var basic_enemy_scene: PackedScene
 
 # Called when the node enters the scene tree for the first time.
