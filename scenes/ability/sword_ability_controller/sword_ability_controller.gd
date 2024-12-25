@@ -42,7 +42,7 @@ func on_timer_timeout():
 func on_ability_upgrade_added(upgrade: AbilityUpgrade, current_upgrades: Dictionary):
 	if upgrade.id != "sword_rate":
 		return
-	var percent_reduction = current_upgrades["sword_rate"]["quanitity"] * .1
+	var percent_reduction = current_upgrades["sword_rate"]["quantity"] * .1
 	$Timer.wait_time = base_wait_time * (1 - percent_reduction)
 	$Timer.start() # reset wait time		
 	print($Timer.wait_time)
